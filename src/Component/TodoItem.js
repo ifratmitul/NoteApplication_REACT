@@ -1,12 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-export default function TodoItem() {
+
+export default function TodoItem(props) {
+    console.log(props.note)
     return (
-    
+
     <div className= "todo-item">
-        <div class="checkbox">
-      <label><input type="checkbox" value=""/>Option 1</label>
-    </div>
+        <div className="checkbox">
+            <label >
+                <input type="checkbox" checked = {props.note.complete}/>
+                {props.note.title + " " + props.note.date}
+            </label>
+        </div>
 
     </div>
 
