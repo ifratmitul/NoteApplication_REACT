@@ -2,8 +2,7 @@ import React from 'react';
 
 
 export default function TodoItem(props) {
-    console.log(props.note)
-    return (
+        return (
 
     <div className= "todo-item">
         <div className="checkbox">

@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react'
 
 import './App.css';
 import './Component/CheckList'
 import CheckList from './Component/CheckList';
 import Header  from './Component/Header';
-function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <CheckList/>
-      
-    </div>
-  );
+
+
+export class App extends Component {
+  render() {
+    return (
+      <div>
+              <Header/>
+              <CheckList/>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
