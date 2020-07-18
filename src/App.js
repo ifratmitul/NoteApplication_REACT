@@ -1,10 +1,12 @@
-import React, { Component } from 'react'
+
 
 import './App.css';
-import './Component/CheckList'
+
 import CheckList from './Component/CheckList';
 import Header  from './Component/Header';
 
+
+import React, { Component } from 'react'
 
 export class App extends Component {
   render() {

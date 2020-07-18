@@ -1,25 +1,29 @@
 const noteData = [
     {
-        id :1, 
-        title : "Buy Grocery",
-        date : "10/10/2020",
-        complete: true
+        id: 1,
+        text: "Take out the trash",
+        completed: true
     },
     {
-        id :2, 
-        title : "Complete Code Challenges",
-        date : "10/10/2020",
-        complete: true
-
-
+        id: 2,
+        text: "Grocery shopping",
+        completed: false
     },
     {
-        id :3, 
-        title : "Complete .NET Reading Materials",
-        date : "10/10/2020",
-        complete: false
-
+        id: 3,
+        text: "Clean gecko tank",
+        completed: false
+    },
+    {
+        id: 4,
+        text: "Mow lawn",
+        completed: true
+    },
+    {
+        id: 5,
+        text: "Catch up on Arrested Development",
+        completed: false
     }
 ]
 
-export default noteData;
+export default noteData

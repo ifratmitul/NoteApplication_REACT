@@ -1,14 +1,18 @@
 import React from 'react';
 
 
-export default function TodoItem(props) {
+function TodoItem(props) {
         return (
 
     <div className= "todo-item">
-        <div className="checkbox">
+        <div >
             <label >
-                <input type="checkbox" checked = {props.note.complete}/>
-                {props.note.title + " " + props.note.date}
+                <input 
+                type="checkbox" 
+                checked = {props.note.completed} 
+                onChange = {() => props.handleChange(props.note.id)}/>
+
+                {props.note.text }
             </label>
         </div>
 
@@ -16,3 +20,4 @@ export default function TodoItem(props) {
 
         )
 }
+export default TodoItem
